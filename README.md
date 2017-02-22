@@ -51,5 +51,5 @@ TODO:
 Modify pig script to make input and output paths configurable, currently hardcoded.
 Improve input data cleansing/validation.
 Automate scheduling/deployment.It is very useful if input data is stored on s3 in date relative path, e.g. yyyy/mm/dd/HH/...
-Make sure there is QA environment to verify end to end automation.
-Add alerts/healthchecks
+Make sure there is QA environment to verify end to end automation. The best way to ensure data reliability is to have large controlled data sets used by automated regression/QA environment.
+Add alerts/healthchecks. Production alerts make sure intermediate data aggregation steps are correct, for example it makes sense to compare file sizes, non empty intermediate steps etc.
